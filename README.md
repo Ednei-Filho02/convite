@@ -70,3 +70,32 @@ projeto-encontro/
 │
 ├── .gitignore
 └── README.md
+
+```
+
+## 🔄 Funcionamento
+
+O usuário inicia o convite e passa por algumas etapas para definir os detalhes do encontro.
+
+As informações selecionadas são armazenadas no estado global da aplicação e, ao confirmar o encontro, são enviadas para a API.
+
+```text
+React
+  ↓
+API REST
+  ↓
+FastAPI
+  ↓
+SQLAlchemy
+  ↓
+PostgreSQL
+```
+## 🎯 Objetivo
+
+O projeto tem como objetivo servir como uma aplicação prática para estudo e desenvolvimento de uma aplicação Full Stack, integrando frontend, backend, API, banco de dados e controle de versão.
+
+## 👨‍💻 Autor
+
+Ednei Soares
+
+Desenvolvido como projeto de estudo e prática em desenvolvimento web Full Stack.
