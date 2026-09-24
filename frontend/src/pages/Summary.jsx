@@ -1,14 +1,23 @@
 import { useNavigate } from "react-router-dom";
 import { useMeeting } from "../context/MeetingContext";
+import { createMeeting } from "../service/api";
 
 function Summary() {
   const navigate = useNavigate();
 
   const { meeting } = useMeeting();
 
-  function handleConfirm() {
+  async function handleConfirm() {
+  try {
+    await createMeeting(meeting);
+
     navigate("/final");
+  } catch (error) {
+    console.error(error);
+
+    alert("Não foi possível salvar o encontro. Tente novamente ❤️");
   }
+}
 
   function formatDate(date) {
     if (!date) {
