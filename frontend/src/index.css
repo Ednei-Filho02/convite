@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #ffe4ec;
+  background: #540202;
   min-height: 100vh;
 }
 
@@ -14,6 +14,7 @@ button {
   font-family: inherit;
 }
 
+/* estilo da pagona inicial */
 .home {
   min-height: 100vh;
 
@@ -28,7 +29,7 @@ button {
   width: 100%;
   max-width: 500px;
 
-  background: white;
+  background: rgb(242, 172, 172);
 
   padding: 50px 30px;
 
@@ -82,15 +83,15 @@ button {
 }
 
 .yes-button {
-  background: #ff4f81;
+  background: #da1e1ef6;
 
-  color: white;
+  color: #161515;
 }
 
 .no-button {
-  background: #eeeeee;
+  background: #f27878;
 
-  color: #333;
+  color: #161515;
 }
 
 .buttons button:hover {
@@ -104,4 +105,163 @@ button {
   transition:
     left 0.15s ease,
     top 0.15s ease;
+}
+
+
+/* Estilo da pagina de DataTime */
+.page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  margin-bottom: 25px;
+
+  text-align: left;
+}
+
+.form label {
+  font-weight: bold;
+
+  margin-top: 10px;
+}
+
+.form input {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  font-size: 16px;
+}
+
+.continue-button {
+  width: 100%;
+
+  border: none;
+
+  padding: 14px;
+
+  border-radius: 12px;
+
+  background: #da1e1ef6;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: transform 0.2s;
+}
+
+.continue-button:hover {
+  transform: scale(1.03);
+}
+
+
+/* Estilo da pagina de typeSelecition */
+.choice-buttons {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  margin-top: 30px;
+}
+
+.choice-button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  padding: 18px;
+
+  border: none;
+  border-radius: 15px;
+
+  background: #ff4f81;
+  color: white;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: transform 0.2s;
+}
+
+.choice-button:hover {
+  transform: scale(1.03);
+}
+
+.choice-button:first-child {
+  background: #ff6f91;
+}
+
+.choice-button:last-child {
+  background: #ff4f81;
+}
+
+.choice-button span {
+  font-size: 16px;
+}
+
+.selected-message {
+  margin-top: 20px;
+
+  color: #666;
+}
+
+/* Estilo da pagina de foods */
+
+.other-food {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  margin-top: 25px;
+
+  text-align: left;
+}
+
+.other-food label {
+  font-weight: bold;
+}
+
+.other-food input {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+.other-food input:focus {
+  border-color: #ff4f81;
 }

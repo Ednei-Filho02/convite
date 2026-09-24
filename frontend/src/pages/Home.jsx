@@ -65,7 +65,7 @@ function Home() {
         <h1>Você aceita sair comigo?</h1>
 
         <p>
-          Tenho uma pergunta muito importante para você...
+          Mas pensa com carinho... rsrs
         </p>
 
         <div className="buttons">
