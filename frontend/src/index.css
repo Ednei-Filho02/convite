@@ -265,3 +265,109 @@ button {
 .other-food input:focus {
   border-color: #ff4f81;
 }
+
+/* Estilo da pagina de Summary */
+
+.summary {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  margin: 30px 0;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 15px;
+
+  background: #fff5f8;
+
+  border-radius: 12px;
+
+  text-align: left;
+}
+
+.summary-item > span {
+  font-size: 28px;
+}
+
+.summary-item strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #333;
+}
+
+.summary-item p {
+  margin: 0;
+
+  color: #666;
+}
+
+/* Estilo da pagina final */.success-page {
+  overflow: hidden;
+}
+
+.success-card {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.success-heart {
+  font-size: 90px;
+
+  margin-bottom: 20px;
+}
+
+.success-card h1 {
+  font-size: 34px;
+
+  margin-bottom: 15px;
+}
+
+.success-card > p {
+  color: #666;
+
+  margin-bottom: 25px;
+}
+
+.final-message {
+  padding: 20px;
+
+  margin: 20px 0;
+
+  background: #fff5f8;
+
+  border-radius: 15px;
+}
+
+.final-message p {
+  margin-bottom: 12px;
+
+  color: #666;
+}
+
+.final-message strong {
+  display: block;
+
+  margin: 8px 0;
+
+  font-size: 18px;
+
+  color: #333;
+}
+
+.hearts {
+  margin-top: 25px;
+
+  font-size: 24px;
+
+  letter-spacing: 5px;
+}
