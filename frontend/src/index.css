@@ -96,3 +96,12 @@ button {
 .buttons button:hover {
   transform: scale(1.05);
 }
+
+.no-button.escaping {
+  position: fixed;
+  z-index: 1000;
+
+  transition:
+    left 0.15s ease,
+    top 0.15s ease;
+}
